@@ -26,15 +26,15 @@ body {
 @font-face {
   font-family: "killigrew";
   src: local(killigrew Regular),
-    url("../fonts/killigrew/killig.ttf") format("truetype"),
-    url('../fonts/killig-webfont.woff') format('woff');
+    url("./../fonts/killigrew/killig.ttf") format("truetype"),
+    url('./../fonts/killig-webfont.woff') format('woff');
   font-weight: 400;
 }
 @font-face {
   font-family: "killigrew";
   src: local(killigrew Bold),
-    url("../fonts/killigrew/killigs.ttf") format("truetype"),
-    url('../fonts/killigs-webfont.woff') format('woff');
+    url("./../fonts/killigrew/killigs.ttf") format("truetype"),
+    url('./../fonts/killigs-webfont.woff') format('woff');
   font-weight: 700;
 }
 @font-face {

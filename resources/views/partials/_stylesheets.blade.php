@@ -5,5 +5,5 @@
 <link href="css/full-slider.css" type="text/css" rel="stylesheet"/>
 <link href="css/style.css" type="text/css" rel="stylesheet"/>
 
-<link rel="icon" type="image/png" href="img/me.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="http://imgur.com/XUK7h0S.jpg" sizes="32x32">
 @yield('stylesheets')

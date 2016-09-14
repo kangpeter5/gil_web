@@ -13,7 +13,7 @@
   <link type="text/css" rel="stylesheet" media="screen,projection" href="{{ URL::asset('css/landing.css') }}">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- <link href="../resources/assets/css/landing.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
-  <!-- <link rel="icon" type="image/png" href="resources/assets/img/me.png" sizes="16x16"> -->
+  <link rel="icon" type="image/png" href="http://imgur.com/XUK7h0S.jpg" sizes="32x32">
 </head>
 
 <body>
@@ -30,9 +30,9 @@
           <div class="inner">
             <div class="col-md-12">
               <ul class="social-network social-circle">
-                  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/HanSoloistGraf/" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mrhanstyles/" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gilyon-brace-27562457" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
               </ul>
             </div>
             <p>&copy;2016 <a href="/about" style="font-family: killigrew;">HanSoloist</a> x <a href="http://www.petekang.com" target="_blank">Pete Kang</a></p>
