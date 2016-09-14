@@ -3,7 +3,7 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <link href="css/full-slider.css" type="text/css" rel="stylesheet"/>
-<link href="css/style-2.css" type="text/css" rel="stylesheet"/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
 
 <link rel="icon" type="image/png" href="img/me.png" sizes="16x16">
 @yield('stylesheets')

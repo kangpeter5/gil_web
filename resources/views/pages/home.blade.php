@@ -12,14 +12,23 @@
 	  	</ol>
 	  	<!-- Wrapper -->
 	    <div class="carousel-inner" role="slideMenu" >
-	        <div class="item active">
-	        	<img src="http://i.imgur.com/aPHCvJc.jpg" class="fill img-responsive center-block" alt="...">
+	    	<div class="item active">
+				<img src="http://imgur.com/84rNYrJ.jpg" class="fill img-responsive center-block" alt="...">
 	        </div>
 	        <div class="item">
-				<img src="http://i.imgur.com/4MS1Ren.jpg" class="fill img-responsive center-block" alt="...">
+				<img src="http://imgur.com/Nv57N8r.jpg" class="fill img-responsive center-block" alt="...">
 	        </div>
 	        <div class="item">
-				<img src="http://i.imgur.com/gtL4VSF.jpg" class="fill img-responsive center-block" alt="...">
+	        	<img src="http://imgur.com/aPHCvJc.jpg" class="fill img-responsive center-block" alt="...">
+	        </div>
+	        <div class="item">
+				<img src="http://imgur.com/4MS1Ren.jpg" class="fill img-responsive center-block" alt="...">
+	        </div>
+	        <div class="item">
+				<img src="http://imgur.com/LM9Ub2A.jpg" class="fill img-responsive center-block" alt="...">
+	        </div>
+	        <div class="item">
+				<img src="http://imgur.com/gtL4VSF.jpg" class="fill img-responsive center-block" alt="...">
 	        </div>
 	    </div>
 	    <!-- Controls -->
@@ -35,6 +44,7 @@
 		</div>
 	</div>
 
+<!-- blog not working yet
    	<div class="text-center col-lg-12 fill" id="content-blog">
    		<a href="/create" class="btn btn-primary btn-lg">Create Post</a>
 	    {{-- @foreach ($posts->all() as $post) --}}
@@ -54,4 +64,5 @@
 	    {{-- @endforeach --}}
    	</div>
    	<br>
+   	-->
 @endsection

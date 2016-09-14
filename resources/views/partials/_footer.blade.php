@@ -6,6 +6,6 @@
             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
         </ul>
         <h5>&copy;2016 <a href="/home" style="font-family: killigrew;">HanSoloist</a> x <a href="http://www.petekang.com" target="_blank">Pete Kang</a></h5>
-        <p></p>
+        <br>
 	</div>
 </footer>

@@ -5,9 +5,9 @@
 @section('content')	
 	<div class="content-space-contact fill">
 	   	<div class="text-center">
-		    <h1>HanSoloist</h1>
-		    <br>
-		    <h2><a class="email-me" href="mailto:info@hansoloist.com" target="_blank">info@hansoloist.com</a></h2>
+		    {{-- <h1>HanSoloist</h1>
+		    <br> --}}
+		    <h1><a class="email-me" href="mailto:info@hansoloist.com" target="_blank">info@hansoloist.com</a></h1>
 	   	</div>
    	</div>
 
