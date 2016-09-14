@@ -4,6 +4,8 @@
 <head>
   @include('partials._head')
   @include('partials._stylesheets')
+  <link rel="icon" type="image/png" href="http://imgur.com/I8m5nll.png" sizes="32x32">
+
 </head>
   <body class="bodyEm">
 

@@ -8,14 +8,12 @@
   <meta property="og:url" content="http://www.gilhansoloist.com"/>
   <meta property="og:description" content="Hansoloist has been an graffiti writer since the dawn of time"/>
   <title>HanSoloist | Artist</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" media="screen,projection" href="{{ URL::asset('css/landing.css') }}">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- <link href="../resources/assets/css/landing.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
   <link rel="icon" type="image/png" href="http://imgur.com/I8m5nll.png" sizes="32x32">
 </head>
-
 <body>
   <div class="site-wrapper img-responsive">
     <div class="site-wrapper-inner">
@@ -25,7 +23,6 @@
             <h1><a href="/home" class="btn btn-dark btn-lg" style="font-family: killigrew; margin-top:20px; font-size:100px">HanSoloist</a></h1>
           </p>
         </div>
-
         <div class="page-footer">
           <div class="inner">
             <div class="col-md-12">
@@ -39,9 +36,7 @@
           </div>
         </div>
       </div>
-
     </div>
-  
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
