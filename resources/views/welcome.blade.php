@@ -13,7 +13,7 @@
   <link type="text/css" rel="stylesheet" media="screen,projection" href="{{ URL::asset('css/landing.css') }}">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- <link href="../resources/assets/css/landing.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
-  <link rel="icon" type="image/png" href="http://imgur.com/XUK7h0S.jpg" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://imgur.com/I8m5nll.png" sizes="32x32">
 </head>
 
 <body>
