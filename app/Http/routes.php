@@ -9,6 +9,4 @@ Route::get('/contact', 'PagesController@getContact');
 Route::get('/affiliates', 'PagesController@getAffiliates');
 Route::get('/gallery', 'PagesController@getGallery');
 
-Route::get('/create', 'PostController@create');
-
 Route::resource('posts','PostController');

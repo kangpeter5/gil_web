@@ -63,7 +63,13 @@ html {
   padding-right: 30px;
   background-color: transparent;
   border-color: transparent;
-}/* END navbar */
+}
+.mobile li, .mobile li a{
+  text-align: center;
+  font-size: 120%;
+  font-family: "killigrew";
+}
+/* END navbar */
 
 /*-----Messages-----*/
 .my-messages{
@@ -247,14 +253,15 @@ html {
 }
 .content-block-affiliates {
   margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: white;
   text-align: center;
 }
 .content-block-affiliates .row div{
   display: inline;
 }
+
 .content-block-affiliates img{
   margin-left: 10px;
   margin-right: 10px;
@@ -266,21 +273,22 @@ html {
   max-width: 100%;
 }
 
+/*----- Forms -----*/
+.form-spacing-top{
+  margin-top: 30px;
+}
+/*END forms*/
+
 /* ------Responsive----- */
 @media (max-width: 767px){
  /* increases the carousel height so it looks good on phones */
   .carousel {
     height: 70%;
+    top: 0;
   }
 }
-
-/* Computer Screen */
-@media and (max-width: 1200px){
-  /* removes trending vacations */
-}
-
 /* iPhone Resolution 6 */
-@media screen and (min-device-width : 414px) and (max-device-width : 736px){
+@media screen and (min-device-width : 414px) and (max-device-width : 767px){
   .hideSliderForMobile{
     display: none;
   }
@@ -294,7 +302,7 @@ html {
     font-family: 'Montserrat' sans-serif !important;
     position: absolute;
     right: 15%;
-    bottom: 20px;
+    bottom: 10%;
     left: 15%;
     z-index: 10;
     margin-bottom: 300px;
@@ -303,6 +311,13 @@ html {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  }
+  .carousel .item img {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: auto;
+    min-height: 100% !important;
   }
   .content-space-contact{
     height: 736px;
@@ -316,7 +331,7 @@ html {
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 425px){
   .hideSliderForMobile{
     display: none;
   }
@@ -325,6 +340,13 @@ html {
   }
   .MoveUpText{
     margin-bottom: 200px;
+  }
+  .carousel .item img {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: auto;
+    min-height: 100% !important;
   }
   .carousel-caption > h1{
     font-family: 'Montserrat' sans-serif !important;
@@ -351,16 +373,16 @@ html {
 /*----- carousel -----*/
 .carousel .item {
 	width: 100%;
-  min-height: 650px !important;
+  min-height: 717px !important;
 }
 
 .carousel .item .active {
-  min-height: 600px !important;
+  min-height: 717px !important;
 }
 
 .carousel .item img {
   position: absolute;
-  top: -100px;
+  top: 50px;
   left: 0;
   width:100%;
   min-height: 650px !important;
@@ -369,7 +391,6 @@ html {
 	width: 100%;
 	min-height: 650px !important;
 }
-
 .carousel-caption > h1{
   font-family: 'Montserrat' sans-serif !important;
   position: absolute;
@@ -384,7 +405,6 @@ html {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-
 .carousel-caption > h2{
   font-family: 'Montserrat'!important;
   position: absolute;
@@ -399,7 +419,6 @@ html {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -412,7 +431,6 @@ html {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-
 .carousel-caption .btn {
   text-shadow: none;
   margin-left:1px;
@@ -436,7 +454,6 @@ html {
   border-color: #0f5c8a;
   color: #fff;
 }
-
 .carousel-caption > .btn > .light-blue{
   text-shadow: none;
   margin-left:1px;
@@ -460,17 +477,14 @@ html {
   border-color: #0f5c8a;
   color: #fff;
 }
-
 .light-blue{
   background-color: #2489c5;
   border-color: #0f5c8a;
   color: #fff;
 }
-
 .carousel-caption p{
   margin-top: -300px;
 }
-
 .carousel-caption input{
   text-align: center;
   background-color: #fff;
@@ -492,7 +506,6 @@ html {
   -moz-transition: -moz-box-shadow 0.45s,border-color 0.45s ease-in-out;
   transition: box-shadow 0.45s,border-color 0.45s ease-in-out;
 }
-
 .carousel-control {
   min-height: 600px;
 }
@@ -616,5 +629,8 @@ footer {
 }
 footer h5{
   color: white;
-  margin-bottom: 0;  
+  margin-bottom: 0;
+}
+.text-shadow-footer{
+  text-shadow: 0px 0px 2px #000000;
 }

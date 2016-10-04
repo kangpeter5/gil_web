@@ -20,7 +20,8 @@
       <div class="cover-container">
         <div class="inner cover">
           <p class="header">
-            <h1><a href="/home" class="btn btn-dark btn-lg" style="font-family: killigrew; margin-top:20px; font-size:100px">HanSoloist</a></h1>
+            <h1><a href="/home" class="btn btn-dark btn-lg" style="font-family: killigrew; margin-top:20px; font-size:100px; text-shadow: 0px 0px 5px #666666;
+">HanSoloist</a></h1>
           </p>
         </div>
         <div class="page-footer">

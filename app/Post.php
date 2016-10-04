@@ -8,6 +8,3 @@ class Post extends Model
 {
     //
 }
-
-// pulls all posts from model
-// Post::all()

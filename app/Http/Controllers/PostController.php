@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\PagesController;
 use App\Post;
 use Session;
 
@@ -17,8 +18,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = App\Post::all();
-        return view('pages.home');
+        $query = "SELECT * FROM posts";
+        // $posts = Post::all();
+        return $this->db->query($query)->result_array();
+        // return view('pages.home')->withPosts($posts);
     }
     /**
      * Show the form for creating a new resource.
@@ -57,12 +60,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    // public function show($id)
-    // {
-            $post = Post::findAll();
-            return view('posts.show')->with('post',$post);
-    //     // 
-    // }
+    public function show($id)
+    {
+        $post = Post::find($id);
+        return view('posts.show')->withPost($post);
+    }
     /**
      * Show the form for editing the specified resource.
      * @param  int  $id
@@ -71,7 +73,7 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
-        return view('pages.index')
+        return view('posts.edit')->withPost($post);
     }
 
     /**

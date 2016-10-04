@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\PostController;
+use App\Post;
+use Session;
+
 class PagesController extends Controller
 {
 	public function getHome()
 	{
 		// '/' or '.' works but '.' makes it look more object oriented
-		return view('pages.home');
+		$posts = Post::all();
+		return view('pages.home')->withPosts($posts);
 	}
 	public function getAbout()
 	{

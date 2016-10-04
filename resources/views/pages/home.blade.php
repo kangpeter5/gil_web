@@ -4,12 +4,6 @@
 
 @section('content')
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	  	<!-- Indicators -->
-	  	<ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
-		    <li data-target="#myCarousel" data-slide-to="2"></li>
-	  	</ol>
 	  	<!-- Wrapper -->
 	    <div class="carousel-inner" role="slideMenu" >
 	    	<div class="item active">
@@ -44,25 +38,26 @@
 		</div>
 	</div>
 
-<!-- blog not working yet
+ {{-- blog not working yet --}}
    	<div class="text-center col-lg-12 fill" id="content-blog">
-   		<a href="/create" class="btn btn-primary btn-lg">Create Post</a>
-	    {{-- @foreach ($posts->all() as $post) --}}
-    	<h1>Title{{-- {{ $post->title }} --}}</h1>
-    	<h4 class="lead">created_at{{-- {{ date('M j, Y g:ia', strtotime($post->created_at)) }} --}}</h4>
-    		{{-- {!! Html::linkRoute('posts.edit', '<span class="glyphicon glyphicon-edit"></span>', array($post->id), array('class'=> 'btn btn-primary')) !!} --}}
-    		<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+   		<a href="{{ route('posts.create') }}" class="btn btn-primary btn-lg">Create Post</a>
+
+	    @foreach ($posts as $post)
+    	<h1>{{ $post->title }}</h1>
+    	<h4 class="lead">{{ date('M j, Y g:ia', strtotime($post->created_at)) }}</h4>
+    		{{-- {!! Html::linkRoute('posts.edit', '<span class="glyphicon glyphicon-edit"></span>', array($post->id), array('class'=> 'btn btn-warning')) !!} --}}
+    		<a href="{{ route('posts.edit', $post->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span></a>
 			{{-- {!! Html::linkRoute('posts.destroy', '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>', array($post->id), array('class'=> 'btn btn-danger')) !!} --}}
-			<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+			<a href="{{ route('posts.destroy', $post->id) }}" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
     	<div class="col-lg-12 well">
     		<img src="">
     		<p class="lead">
-    			words per minute is useless tool unless you're a security expert... even then most of the coding is done before hand(preventative){{-- {{ $post->body }} --}}
+    			{{-- words per minute is useless tool unless you're a security expert... even then most of the coding is done before hand(preventative) --}}{{ $post->body }}
     		</p>
     	</div>
 		<hr>
-	    {{-- @endforeach --}}
+	    @endforeach
    	</div>
    	<br>
-   	-->
+   	
 @endsection
