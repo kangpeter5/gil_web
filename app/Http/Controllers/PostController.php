@@ -18,10 +18,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $query = "SELECT * FROM posts";
-        // $posts = Post::all();
-        return $this->db->query($query)->result_array();
-        // return view('pages.home')->withPosts($posts);
+        // $query = "SELECT * FROM posts";
+        $posts = Post::all();
+        // return $this->db->query($query)->result_array();
+        return view('pages.home')->withPosts($posts);
     }
     /**
      * Show the form for creating a new resource.
@@ -66,7 +66,7 @@ class PostController extends Controller
         return view('posts.show')->withPost($post);
     }
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified resource. 
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -84,7 +84,22 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // validate
+        $this->validate($request, array(
+                'title' => 'required|max:140',
+                'body' => 'required'
+            ));
+        // var_dump($request);
+        // die();
+        // save
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+        // set flash message
+        Session::flash('success','Post was successfully saved!');
+        // redirect with flash data to pages.home
+        return redirect()->route('posts.index');
     }
 
     /**

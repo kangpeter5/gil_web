@@ -43,14 +43,15 @@
    		<a href="{{ route('posts.create') }}" class="btn btn-primary btn-lg">Create Post</a>
 
 	    @foreach ($posts as $post)
+	    <img src="">
     	<h1>{{ $post->title }}</h1>
-    	<h4 class="lead">{{ date('M j, Y g:ia', strtotime($post->created_at)) }}</h4>
-    		{{-- {!! Html::linkRoute('posts.edit', '<span class="glyphicon glyphicon-edit"></span>', array($post->id), array('class'=> 'btn btn-warning')) !!} --}}
+    	<h5>{{ date('M j, Y g:ia', strtotime($post->created_at)) }}</h5>
+    		{{-- {!! Html::linkRoute('posts.edit', 'edit', array($post->id), array('class'=> 'btn btn-warning')) !!} --}}
     		<a href="{{ route('posts.edit', $post->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span></a>
-			{{-- {!! Html::linkRoute('posts.destroy', '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>', array($post->id), array('class'=> 'btn btn-danger')) !!} --}}
+			{{-- {!! Html::linkRoute('posts.destroy', 'delete" aria-hidden="true"></span>', array($post->id), array('class'=> 'btn btn-danger')) !!} --}}
 			<a href="{{ route('posts.destroy', $post->id) }}" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+		{{-- <img src="{{ $post->piclink }}"> --}}
     	<div class="col-lg-12 well">
-    		<img src="">
     		<p class="lead">
     			{{-- words per minute is useless tool unless you're a security expert... even then most of the coding is done before hand(preventative) --}}{{ $post->body }}
     		</p>
