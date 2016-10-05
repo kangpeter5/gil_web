@@ -7,7 +7,7 @@
 	  	<!-- Wrapper -->
 	    <div class="carousel-inner" role="slideMenu" >
 	    	<div class="item active">
-				<img src="http://imgur.com/84rNYrJ.jpg" class="fill img-responsive center-block" alt="...">
+				<img src="http://imgur.com/ZK7OckT.jpg" class="fill img-responsive center-block" alt="...">
 	        </div>
 	        <div class="item">
 				<img src="http://imgur.com/Nv57N8r.jpg" class="fill img-responsive center-block" alt="...">
@@ -48,9 +48,9 @@
     	<h5>{{ date('M j, Y g:ia', strtotime($post->created_at)) }}</h5>
     		{{-- {!! Html::linkRoute('posts.edit', 'edit', array($post->id), array('class'=> 'btn btn-warning')) !!} --}}
     		<a href="{{ route('posts.edit', $post->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span></a>
-			{{-- {!! Html::linkRoute('posts.destroy', 'delete" aria-hidden="true"></span>', array($post->id), array('class'=> 'btn btn-danger')) !!} --}}
-			<a href="{{ route('posts.destroy', $post->id) }}" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
-		{{-- <img src="{{ $post->piclink }}"> --}}
+    		{!! Form::open()  !!}
+
+			{!! Html::linkRoute('posts.destroy', 'delete', array($post->id), array('class'=> 'btn btn-danger')) !!}
     	<div class="col-lg-12 well">
     		<p class="lead">
     			{{-- words per minute is useless tool unless you're a security expert... even then most of the coding is done before hand(preventative) --}}{{ $post->body }}

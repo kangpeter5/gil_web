@@ -7,7 +7,7 @@
 	   	<div class="text-center">
 		    {{-- <h1>HanSoloist</h1>
 		    <br> --}}
-		    <h1><a class="email-me" href="mailto:info@hansoloist.com" target="_blank">info@hansoloist.com</a></h1>
+		    <h1><a class="email-me" href="mailto:sirmandible@hotmail.com" target="_blank">sirmandible@hotmail.com</a></h1>
 	   	</div>
    	</div>
 
