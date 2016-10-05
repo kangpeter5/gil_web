@@ -213,9 +213,9 @@ html {
 .content-space-contact h1{
   position: absolute;
   bottom: 50%;
-  font-size: 250%;
+  font-size: 200%;
   color: black;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   width: 100%;
   line-height: 150%;
   text-shadow: 0px 2px 5px #ffffff;
