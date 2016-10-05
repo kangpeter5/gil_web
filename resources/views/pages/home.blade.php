@@ -36,6 +36,13 @@
 		    <span class="sr-only">Next</span>
 		</a>
 		</div>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
 	</div>
 
  {{-- blog not working yet --}}
@@ -43,12 +50,11 @@
    		<a href="{{ route('posts.create') }}" class="btn btn-primary btn-lg">Create Post</a>
 
 	    @foreach ($posts as $post)
-	    <img src="">
+	    <img class="blog-img-only" src="{{ $post->piclink }}">
     	<h1>{{ $post->title }}</h1>
     	<h5>{{ date('M j, Y g:ia', strtotime($post->created_at)) }}</h5>
-    		{{-- {!! Html::linkRoute('posts.edit', 'edit', array($post->id), array('class'=> 'btn btn-warning')) !!} --}}
     		<a href="{{ route('posts.edit', $post->id) }}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span></a>
-    		{!! Form::open()  !!}
+    		{{-- {!! Form::open()  !!} --}}
 
 			{!! Html::linkRoute('posts.destroy', 'delete', array($post->id), array('class'=> 'btn btn-danger')) !!}
     	<div class="col-lg-12 well">

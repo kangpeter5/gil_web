@@ -509,8 +509,13 @@ html {
 .carousel-control {
   min-height: 600px;
 }
-
 /* END carousel*/
+
+/* Blog */
+.blog-img-only{
+  max-width: 100%;
+}
+/* END Blog*/
 
 .page-break {
   width: 50%;

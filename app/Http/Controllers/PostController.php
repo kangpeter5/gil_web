@@ -41,12 +41,14 @@ class PostController extends Controller
     {
         // validate the data
         $this->validate($request, array(
+                'piclink' => 'required|regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/',
                 'title' => 'required|max:140',
                 'body' => 'required'
             )
         );
         // store in the db
         $post = new Post;
+        $post->piclink = $request->piclink;
         $post->title = $request->title;
         $post->body = $request->body;
         $post->save();
@@ -86,6 +88,7 @@ class PostController extends Controller
     {
         // validate
         $this->validate($request, array(
+                'piclink' => 'required|regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/',
                 'title' => 'required|max:140',
                 'body' => 'required'
             ));
@@ -93,6 +96,7 @@ class PostController extends Controller
         // die();
         // save
         $post = Post::find($id);
+        $post->piclink = $request->input('piclink');
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->save();

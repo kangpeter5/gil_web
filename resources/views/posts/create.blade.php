@@ -10,13 +10,14 @@
 		<hr>
 		{{-- forms via laravel via https://www.youtube.com/watch?v=El4yziFuygQ --}}
 		{!! Form::open(['route' => 'posts.store']) !!}
+			{!! Form::label('piclink',"Link to your picture:") !!}
+			{!! Form::text('piclink', null, array('class' => 'form-control'))!!}
 			{!! Form::label('title','Title:') !!}
-			{!! Form::text('title', null, array('class' =>  'form-control')) !!}
+			{!! Form::text('title', null, array('class' => 'form-control')) !!}
 			{!! Form::label('body', "Blog Body:") !!}
 			{!! Form::textarea('body', null, array('class' => 'form-control')) !!}
 			{!! Form::submit('Create Post', array('class' => 'btn-success btn-lg btn-block', 'style' => 'margin-top:20px;')) !!}
 		{!! Form::close() !!}
 	</div>
 </div>
-
 @endsection
